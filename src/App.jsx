@@ -3,8 +3,8 @@ import Data from './data'
 import Liste from './Liste'
 
 function App() {
-  
-  const[kisiler, setKisiler] = useState(Data);
+
+  const [kisiler, setKisiler] = useState(Data);
 
   const sifirla = () => {
     setKisiler([]);
@@ -13,7 +13,7 @@ function App() {
   return (
     <main>
       <section className="container">
-        <h4>Bugun {kisiler.length} kişinin dogum gunu bulunmakta</h4>
+        <h4>Bugun {kisiler.length} kişinin dogum gunu bulunmaktadır</h4>
         <br />
         <Liste kisiler={kisiler} />
         <button onClick={sifirla} >Temizle</button>
